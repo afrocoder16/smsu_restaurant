@@ -62,6 +62,12 @@ body {
     max-width: 100%;
     border-radius: 50%;
   }
+
+  .chef-image {
+    width: 200px; /* or any other size */
+    height: auto; /* maintains the aspect ratio */
+  }
+  
   
   /* Specials Section */
   #specials {
@@ -74,6 +80,16 @@ body {
     text-align: center;
     margin-bottom: 30px;
   }
+  /* loading animaiton  */
+.loader{
+    position: fixed;
+    top:0; left:0; right:0; bottom: 0;
+    z-index: 1000000;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
   
   /* Footer */
   footer {
