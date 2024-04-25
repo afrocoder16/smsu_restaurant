@@ -1,0 +1,108 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 1.1em; /* Slightly larger font size for navigation */
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+  }
+  
+  /* Header section */
+  .header {
+    background: url('img/inside-1.jpg') no-repeat center center/cover;
+    height: 85vh; /* Viewport height */
+    color: rgb(255, 249, 249);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+  }
+  
+  
+  .header h1 {
+    font-size: 2.5em;
+    font-weight: lighter;
+  }
+  
+  .header p {
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+  }
+  
+  /* About Us Section */
+  #about {
+    background: #ffffff;
+    padding: 50px 0;
+    color: #333;
+  }
+  
+  #about img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Specials Section */
+  #specials {
+    padding: 50px 0;
+    background: #eee;
+  }
+  
+  #specials h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Media Queries for responsive adjustments */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2em;
+    }
+  
+    .header p {
+      font-size: 1.2em;
+    }
+  }
+  
