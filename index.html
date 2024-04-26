@@ -14,7 +14,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- This line was edited -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -32,18 +32,17 @@
     </div>
 </nav>
       
-
-
   <header class="header">
     <div class="overlay">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-            <h1 class="fw-light">Cuisine & Drinks Beyond the Boundaries of Taste</h1>
-            <p class="lead">Discover our chef's exotic creations.</p>
-            <button onclick="location.href='reservation.html'" class="btn btn-primary btn-lg">Make a Reservation</button>
-            <button onclick="location.href='menu.html'" class="btn btn-secondary btn-lg">View Menu</button>
-          </div>
+            <div class="col-12 text-center">
+                <h1 class="fw-light">Cuisine & Drinks Beyond the Boundaries of Taste</h1>
+                <p class="lead">Discover our chef's exotic creations.</p>
+                <button onclick="location.href='reservation.html'" class="btn btn-primary btn-lg">Make a Reservation</button>
+                <a href="#specials" class="btn btn-secondary btn-lg">View Menu</a> 
+              </div>
+              
         </div>
       </div>
     </div>
@@ -65,14 +64,57 @@
     </div>
   </section>
 
+<!-- adding some special menu here -->
+
   <section id="specials" class="py-5 bg-light">
     <div class="container">
       <h2 class="mb-4 text-center">Seasonal Specials</h2>
       <div class="row">
-        <!-- Placeholder for Special Dishes -->
+        <!-- Special Dish 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img\grilled-salmon-with-salad.jpg" class="card-img-top" alt="Special Dish 1">
+            <div class="card-body">
+              <h5 class="card-title">Grilled Salmon</h5>
+              <p class="card-text">Freshly grilled salmon with a dill sauce, served with organic greens.</p>
+              <div class="text-center">
+                <span class="text-muted">$19.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Special Dish 2 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img\delicious-goulash-ready-dinner.jpg" class="card-img-top" alt="Special Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Beef Bourguignon</h5>
+              <p class="card-text">Tender beef slow cooked in a rich red wine sauce, with root vegetables.</p>
+              <div class="text-center">
+                <span class="text-muted">$22.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Special Dish 3 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img\moussaka-traditional-greek-dish.jpg" class="card-img-top" alt="Special Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Vegetarian Lasagna</h5>
+              <p class="card-text">Layers of pasta, seasonal vegetables, and cheese, baked to perfection.</p>
+              <div class="text-center">
+                <span class="text-muted">$17.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  
+
+
 
   <footer class="py-5 bg-dark text-white-50">
     <div class="container text-center">
