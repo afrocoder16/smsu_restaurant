@@ -9,12 +9,12 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">SMSU</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Jebena Ethiopian</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- This line was edited -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -44,9 +44,10 @@
         <input type="email" class="form-control" id="email" name="email" required>
       </div>
       <div class="form-group">
-        <label for="phone">Phone Number</label>
+        <label for="phone">Phone (Optional)</label>
         <input type="tel" class="form-control" id="phone" name="phone">
-      </div>
+        <div id="phone-error" style="color: red;"></div>
+    </div>
       <div class="form-group">
         <label for="date">Reservation Date</label>
         <input type="date" class="form-control" id="date" name="date" required>
@@ -72,6 +73,24 @@
   </div>
 
   <script src="script.js"></script>
+
+
+  <script>
+    document.getElementById('phone').addEventListener('input', function(event) {
+        var phoneInput = event.target;
+        var errorDiv = document.getElementById('phone-error');
+    
+        var regex = /^[0-9]*$/;
+    
+        if (!regex.test(phoneInput.value)) {
+            errorDiv.textContent = 'Please enter only numbers.';
+        } else {
+            errorDiv.textContent = '';
+        }
+    });
+    </script>
+    
+  
 </body>
 </html>
 
